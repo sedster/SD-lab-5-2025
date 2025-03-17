@@ -7,29 +7,7 @@ app.listen(PORT, () => {
     console.log("Server Listening on PORT:", PORT);
 });
 
-const books = [{
-    "id": "1",
-    "title": "1984",
-    "details": [
-      {
-        "id": "1",
-        "author": "George Orwell",
-        "genre": "Dystopian",
-        "publicationYear": 1949
-      }
-    ]
-  }, {
-    "id": "2",
-    "title": "To Kill a Mockingbird",
-    "details": [
-      {
-        "id": "1",
-        "author": "Harper Lee",
-        "genre": "Fiction",
-        "publicationYear": 1960
-      }
-    ]
-  }];
+const books = [];
 
 //whoami
 app.get("/whoami", (req, res) => {
